@@ -18,6 +18,9 @@ public class Reserva {
     ArrayList<Servicios> servicios = new ArrayList<Servicios>();
     private int cantPersonas;
 
+    public Reserva() {
+    }
+    
     public Reserva(Habitacion habitacion, String fechaIngreso, String fechaEgreso, int cantPersonas) {
         this.habitacion = habitacion;
         this.fechaIngreso = fechaIngreso;
@@ -25,8 +28,6 @@ public class Reserva {
         this.cantPersonas = cantPersonas;
     }
 
-    public Reserva() {
-    }
 
     public Habitacion getHabitacion() {
         return habitacion;

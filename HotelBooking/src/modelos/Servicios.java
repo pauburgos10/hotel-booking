@@ -14,6 +14,15 @@ public class Servicios {
     private String descripcion;
     private double precio;
 
+    public Servicios() {
+    }
+
+    public Servicios(int id, String descripcion, double precio) {
+        this.id = id;
+        this.descripcion = descripcion;
+        this.precio = precio;
+    }
+    
     public int getId() {
         return id;
     }
@@ -35,15 +44,6 @@ public class Servicios {
     }
 
     public void setPrecio(double precio) {
-        this.precio = precio;
-    }
-
-    public Servicios() {
-    }
-
-    public Servicios(int id, String descripcion, double precio) {
-        this.id = id;
-        this.descripcion = descripcion;
         this.precio = precio;
     }
 

@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author German
  */
 public class Hotel {
-        ArrayList <Habitacion> habitaciones = new ArrayList<>();
+    ArrayList <Habitacion> habitaciones = new ArrayList<>();
     ArrayList <Reserva> reservas = new ArrayList<>();
 
     public Hotel() {

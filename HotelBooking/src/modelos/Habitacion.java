@@ -11,10 +11,21 @@ package modelos;
  */
 public class Habitacion {
     private int id;
-    private int precioPorDia;
+    private double precioPorDia;
     private int capacidad;
     private CategoriaHab categoria;
 
+    public Habitacion() {
+    }
+
+    public Habitacion(int id, int precioPorDia, int capacidad, CategoriaHab categoria) {
+        this.id = id;
+        this.precioPorDia = precioPorDia;
+        this.capacidad = capacidad;
+        this.categoria = categoria;
+    }
+    
+    
     public int getId() {
         return id;
     }
@@ -23,7 +34,7 @@ public class Habitacion {
         this.id = id;
     }
 
-    public int getPrecioPorDia() {
+    public double getPrecioPorDia() {
         return precioPorDia;
     }
 
@@ -44,16 +55,6 @@ public class Habitacion {
     }
 
     public void setCategoria(CategoriaHab categoria) {
-        this.categoria = categoria;
-    }
-
-    public Habitacion() {
-    }
-
-    public Habitacion(int id, int precioPorDia, int capacidad, CategoriaHab categoria) {
-        this.id = id;
-        this.precioPorDia = precioPorDia;
-        this.capacidad = capacidad;
         this.categoria = categoria;
     }
 

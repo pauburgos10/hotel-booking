@@ -25,10 +25,6 @@ public class Huesped {
         this.edad = edad;
     }
 
-    @Override
-    public String toString() {
-        return "Huesped{" + "dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + '}';
-    }
 
     public String getDni() {
         return dni;
@@ -60,5 +56,10 @@ public class Huesped {
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+    
+    @Override
+    public String toString() {
+        return "Huesped{" + "dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + '}';
     }
 }

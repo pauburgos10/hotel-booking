@@ -18,13 +18,12 @@ public class Habitacion {
     public Habitacion() {
     }
 
-    public Habitacion(int id, int precioPorDia, int capacidad, CategoriaHab categoria) {
+    public Habitacion(int id, double precioPorDia, int capacidad, CategoriaHab categoria) {
         this.id = id;
         this.precioPorDia = precioPorDia;
         this.capacidad = capacidad;
         this.categoria = categoria;
     }
-    
     
     public int getId() {
         return id;

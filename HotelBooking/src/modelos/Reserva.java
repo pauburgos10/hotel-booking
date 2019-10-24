@@ -1,27 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package modelos;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
-/**
- *
- * @author German
- */
 public class Reserva {
     private Habitacion habitacion;
-    private String fechaIngreso;
-    private String fechaEgreso;
+    private LocalDate fechaIngreso;
+    private LocalDate fechaEgreso;
     ArrayList<Servicios> servicios = new ArrayList<Servicios>();
     private int cantPersonas;
 
     public Reserva() {
     }
     
-    public Reserva(Habitacion habitacion, String fechaIngreso, String fechaEgreso, int cantPersonas) {
+    public Reserva(Habitacion habitacion, LocalDate fechaIngreso, LocalDate fechaEgreso, int cantPersonas) {
         this.habitacion = habitacion;
         this.fechaIngreso = fechaIngreso;
         this.fechaEgreso = fechaEgreso;
@@ -37,19 +29,19 @@ public class Reserva {
         this.habitacion = habitacion;
     }
 
-    public String getFechaIngreso() {
+    public LocalDate getFechaIngreso() {
         return fechaIngreso;
     }
 
-    public void setFechaIngreso(String fechaIngreso) {
+    public void setFechaIngreso(LocalDate fechaIngreso) {
         this.fechaIngreso = fechaIngreso;
     }
 
-    public String getFechaEgreso() {
+    public LocalDate getFechaEgreso() {
         return fechaEgreso;
     }
 
-    public void setFechaEgreso(String fechaEgreso) {
+    public void setFechaEgreso(LocalDate fechaEgreso) {
         this.fechaEgreso = fechaEgreso;
     }
 

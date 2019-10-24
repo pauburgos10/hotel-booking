@@ -1,24 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package modelos;
 
-/**
- *
- * @author German
- */
 public class Habitacion {
     private int id;
     private double precioPorDia;
     private int capacidad;
-    private CategoriaHab categoria;
+    private CategoriaHabitacion categoria;
 
     public Habitacion() {
     }
 
-    public Habitacion(int id, double precioPorDia, int capacidad, CategoriaHab categoria) {
+    public Habitacion(int id, double precioPorDia, int capacidad, CategoriaHabitacion categoria) {
         this.id = id;
         this.precioPorDia = precioPorDia;
         this.capacidad = capacidad;
@@ -49,11 +40,11 @@ public class Habitacion {
         this.capacidad = capacidad;
     }
 
-    public CategoriaHab getCategoria() {
+    public CategoriaHabitacion getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(CategoriaHab categoria) {
+    public void setCategoria(CategoriaHabitacion categoria) {
         this.categoria = categoria;
     }
 

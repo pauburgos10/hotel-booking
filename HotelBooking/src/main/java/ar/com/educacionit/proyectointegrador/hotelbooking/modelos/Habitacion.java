@@ -1,4 +1,6 @@
-package modelos;
+package ar.com.educacionit.proyectointegrador.hotelbooking.modelos;
+
+import ar.com.educacionit.proyectointegrador.hotelbooking.modelos.CategoriaHabitacion;
 
 public class Habitacion {
     private int id;

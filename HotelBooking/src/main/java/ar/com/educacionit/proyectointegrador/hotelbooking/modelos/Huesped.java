@@ -1,4 +1,4 @@
-package modelos;
+package ar.com.educacionit.proyectointegrador.hotelbooking.modelos;
 
 public class Huesped {
     private String dni;

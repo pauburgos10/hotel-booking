@@ -1,4 +1,4 @@
-package modelos;
+package ar.com.educacionit.proyectointegrador.hotelbooking.modelos;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

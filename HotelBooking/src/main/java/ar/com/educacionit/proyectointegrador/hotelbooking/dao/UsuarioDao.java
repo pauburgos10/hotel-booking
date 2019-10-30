@@ -20,17 +20,16 @@ public class UsuarioDao {
         con.close();
     }
 
-    /*public static void modifica(Usuario p) throws Exception {
+    public static void modificarClave(Usuario u) throws Exception {
         Connection con = ConexionBaseDeDatos.obtenerConexion();
-        String sql = "update personas set nombre ='" + p.getNombre() 
-                + "', apellido = '" + p.getApellido()
-                + "', edad=" + p.getEdad() + " where id = " + p.getId();
+        String sql = "update usuarios set clave ='" + u.getClave()
+                + "' where dni = " + u.getDni();
         Statement st = con.createStatement();
         st.execute(sql);
         st.close();
         con.close();
     }
-
+/*
     public static void elimina(int id) throws Exception {
         Connection con = ConexionBaseDeDatos.obtenerConexion();
         String sql = "delete from personas where id = " + id;

@@ -6,6 +6,7 @@ import ar.com.educacionit.proyectointegrador.hotelbooking.modelos.Usuario;
 
 public class HotelBooking {
 
+    String algo = "algo";
     public static void main(String[] args) {
         Usuario fulano = new Usuario("30100100", "jimena@gmail.com", "30100100");
         try {

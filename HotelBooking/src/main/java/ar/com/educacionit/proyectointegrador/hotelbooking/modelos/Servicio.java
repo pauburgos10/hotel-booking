@@ -1,25 +1,25 @@
 package ar.com.educacionit.proyectointegrador.hotelbooking.modelos;
 
-public class Servicios {
-    private int id;
+public class Servicio {
+    private int idServicios;
     private String descripcion;
     private double precio;
 
-    public Servicios() {
+    public Servicio() {
     }
 
-    public Servicios(int id, String descripcion, double precio) {
-        this.id = id;
+    public Servicio(int id, String descripcion, double precio) {
+        this.idServicios = id;
         this.descripcion = descripcion;
         this.precio = precio;
     }
     
     public int getId() {
-        return id;
+        return idServicios;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.idServicios = id;
     }
 
     public String getDescripcion() {
@@ -40,6 +40,9 @@ public class Servicios {
 
     @Override
     public String toString() {
-        return "Servicios{" + "id=" + id + ", descripcion=" + descripcion + ", precio=" + precio + '}';
+        return "Servicios{" + "id=" + idServicios + ", descripcion=" + descripcion + ", precio=" + precio + '}';
     }
+    
+    
+    
 }

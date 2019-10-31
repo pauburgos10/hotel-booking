@@ -7,7 +7,7 @@ public class Reserva {
     private Habitacion habitacion;
     private LocalDate fechaIngreso;
     private LocalDate fechaEgreso;
-    ArrayList<Servicios> servicios = new ArrayList<Servicios>();
+    ArrayList<Servicio> servicios = new ArrayList<Servicio>();
     private int cantPersonas;
 
     public Reserva() {
@@ -45,11 +45,11 @@ public class Reserva {
         this.fechaEgreso = fechaEgreso;
     }
 
-    public ArrayList<Servicios> getServicios() {
+    public ArrayList<Servicio> getServicios() {
         return servicios;
     }
 
-    public void setServicios(ArrayList<Servicios> servicios) {
+    public void setServicios(ArrayList<Servicio> servicios) {
         this.servicios = servicios;
     }
 

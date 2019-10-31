@@ -6,8 +6,17 @@ public class Usuario {
     private String dni;
     private String email;
     private String clave;
+    private String rol;
 
     public Usuario() {
+    }
+
+    public String getRol() {
+        return rol;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
     }
 
     public Usuario(String dni, String email,  String clave) {

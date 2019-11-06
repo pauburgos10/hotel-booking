@@ -65,10 +65,12 @@ CREATE TABLE `usuarios` (
 
 
 
-CREATE TABLE 'servicios'
-	( 'idServicios' int unsigned auto_increment not null,
-	'descripcion' varchar(50) not null,
-	'precio' double not null,
-	PRIMARY KEY('idServicios');
+CREATE TABLE servicios
+( 
+    idServicios int unsigned auto_increment not null,
+	descripcion varchar(50) not null,
+	precio double not null,
+	PRIMARY KEY(idServicios)
+);
 
  

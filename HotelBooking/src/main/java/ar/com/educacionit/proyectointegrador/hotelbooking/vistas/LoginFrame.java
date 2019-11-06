@@ -118,7 +118,7 @@ public class LoginFrame extends javax.swing.JFrame {
         }
         
         if (logueado != null) {
-            JPanel panelPrincipal = new PanelPrincipal();
+            JFrame panelPrincipal = new PanelPrincipal();
             panelPrincipal.setVisible(true);
         } else {
             JOptionPane.showMessageDialog(this, "Datos incorrectos.");
